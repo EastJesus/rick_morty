@@ -1,0 +1,41 @@
+.characters span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.character {
+    width: calc(25% - 20px);
+    padding: 10px;
+    position: relative;
+}
+
+@media all and (max-width: 500px) {
+    .character {
+        width: calc(100% - 20px);
+    }
+}
+
+.character img {
+    width: 100%;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.character img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.character_close {
+    position: absolute;
+    color: white;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.character_close:hover {
+    color: lightcoral;
+}

@@ -1,0 +1,43 @@
+
+.party {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.party__characters {
+    display: flex;
+    justify-content: center;
+}
+
+.party__image {
+    width: 170px;
+    height: 170px;
+    background: rgb(218,218,218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 10px;
+}
+
+.party__image img {
+    width: 100%;
+    transition: all 1s;
+}
+
+.party__image p {
+    color: white;
+}
+
+
+@media all and (max-width: 500px) {
+    .party__characters {
+        flex-direction: column;
+    }
+
+    .party__image {
+        margin: 10px;
+    }
+}
